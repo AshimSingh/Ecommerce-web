@@ -679,3 +679,9 @@ footer{
         margin-left: 0;
     }
 }
+
+
+/* About Page */
+.aboutmodel{
+    background-image: url(img/about/banner.png);
+}
