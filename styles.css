@@ -685,3 +685,13 @@ footer{
 .aboutmodel{
     background-image: url(img/about/banner.png);
 }
+.aboutimg{
+    width: 90%;
+    min-width: 600px;
+}
+.aboutimg img{
+    height: 400px;
+}
+.aboutDes{
+    line-height: 25px;
+}
