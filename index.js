@@ -1,7 +1,6 @@
 const products = document.querySelector(".productClass")
 const newArrivals=document.querySelector(".newArrival")
-
-
+const bar=document.querySelector(".mobileView")
 const data = [
     {
         "mrp":"1200",
@@ -156,3 +155,18 @@ function Arrivals(array){
     }
 }
 Arrivals(newdata)
+// const bar =document.querySelector(".bar")
+// mobileView.addEventListener("click",function (){
+//     document.querySelector("#navbar").getElementsByClassName.display="flex"
+// })
+const navbar =document.querySelector("#navbar")
+const close =document.querySelector(".close")
+if(bar){
+    bar.addEventListener('click',()=>{
+        // navbar.style.display="flex"
+        navbar.classList.add('active')
+      })
+}
+close.addEventListener("click",function(){
+    navbar.classList.remove("active")
+})
