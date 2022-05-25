@@ -619,7 +619,7 @@ footer{
         background-position: top 50px right 30%;
     }
     .features{
-        justify-content: center;
+        justify-content: space-between;
     }
     .banner{
         height: 20vh;
@@ -675,16 +675,17 @@ footer{
         padding: 20px;
     }
     .features{
-        justify-content: space-between;
+        justify-content: center;
     }
     .f1{
         align-items: center;
-        margin: 0px 0px 15px 0px;
-        width: 160px;
+        margin: 15px 10px;
+        width: 120px;
         height: 200px;
+        overflow: hidden;
     }
     .f1 >img{
-        margin-left: -20px;
+        margin-left: -40px;
     }
     .productdescr p {
         font-size: 1.2rem;
