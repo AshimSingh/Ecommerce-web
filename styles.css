@@ -548,6 +548,42 @@ footer{
     
 }
 
+
+
+
+/* About Page */
+
+.aboutmodel{
+    background-image: url(img/about/banner.png);
+}
+.aboutimg{
+    width: 50%;   
+}
+.aboutimg img{
+    width: 100%;
+    height: 400px;
+}
+.aboutDes{
+    width: 40%;
+    line-height: 25px;
+}
+.aboutblog{
+    margin-bottom: 0px;
+}
+.videoSection{
+    text-align: center;
+}
+.videoSection a{
+    color: rgb(174, 20, 174);
+}
+.videoSection .video >video{
+    width: 70%;
+    border-radius: 20px;
+}
+
+
+
+
 @media (max-width:780px) {
     #navbar{
         display: flex;
@@ -614,6 +650,11 @@ footer{
     .productDescription {
         width: 100%;
     }
+    .videoSection .video >video{
+        width: 100%;
+        object-fit: cover;
+        height: 70vh;
+    }
 }
 @media (max-width:477px) {
     .header{
@@ -678,20 +719,8 @@ footer{
     .blogDes{
         margin-left: 0;
     }
+   .aboutDes{
+       width: 100%;
+   }
 }
 
-
-/* About Page */
-.aboutmodel{
-    background-image: url(img/about/banner.png);
-}
-.aboutimg{
-    width: 90%;
-    min-width: 600px;
-}
-.aboutimg img{
-    height: 400px;
-}
-.aboutDes{
-    line-height: 25px;
-}
