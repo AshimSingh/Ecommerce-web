@@ -581,7 +581,10 @@ footer{
     border-radius: 20px;
 }
 
-
+/* Contact us */
+.contactmodel{
+    background-image: url(img/about/banner.png);
+}
 
 
 @media (max-width:780px) {
