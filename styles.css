@@ -582,8 +582,29 @@ footer{
 }
 
 /* Contact us */
+.contactInfo{
+    display: flex;
+    align-items: center;
+}
 .contactmodel{
     background-image: url(img/about/banner.png);
+}
+.contactDetail{
+    width: 50%;
+}
+.contactDetail span,h3,strong{
+    line-height: 20px;
+    padding: 20px 0;
+    
+}
+.contactDetail .location li{
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+.contactDetail .location li >p{
+    
+    margin-left: 15px;
 }
 
 
