@@ -592,7 +592,8 @@ footer{
 .contactDetail{
     width: 50%;
 }
-.contactDetail span,h3,strong{
+.contactDetail span,h3,strong,
+.fontDetail span{
     line-height: 20px;
     padding: 20px 0;
     
@@ -605,6 +606,51 @@ footer{
 .contactDetail .location li >p{
     
     margin-left: 15px;
+}
+.formDetail .buts{
+    background-color: #088178;
+    
+}
+.formDetail .forminput{
+    width: 65%;
+}
+.formDetail form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.formDetail input,.formDetail textarea{
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom:20px;
+    border: 1px solid #e1e1e1;
+}
+.formDetail .people div{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+.formDetail .people div img{
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+.formDetail .people p{
+    margin: 0;
+    font-size: 15px;
+    line-height: 20px;
+}
+.formDetail .people span{
+    font-size: 20px;
+    color: #1a1a1a;
+}
+.formDetail{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
 }
 
 
