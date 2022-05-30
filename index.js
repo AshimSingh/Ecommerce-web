@@ -170,5 +170,10 @@ if(bar){
       })
 }
 close.addEventListener("click",function(){
+    fullscreen.style.display="flex"
+    navbar.classList.remove("active")
+})
+fullscreen.addEventListener("click",function(){  
+    fullscreen.style.display = "none"
     navbar.classList.remove("active")
 })

@@ -29,6 +29,7 @@
             <i class="fa-solid fa-bars"></i>
         </div>
     </section>
+    <section class="fullscreen"></section>
     <section class="shopModel blogmodel">
         <h2>#read More</h2>
         <p>Read all case studies about our products!</p>
@@ -126,14 +127,23 @@
         const bar=document.querySelector(".mobileView")
         const navbar =document.querySelector("#navbar")
         const close =document.querySelector(".close")
+        const fullscreen =document.querySelector(".fullscreen")
         if(bar){
     
     bar.addEventListener('click',()=>{
         // navbar.style.display="flex"
+        fullscreen.style.display="flex"
+        fullscreen.style.zIndex="1"
         navbar.classList.add('active')
       })
 }
 close.addEventListener("click",function(){
+    fullscreen.style.display="none"
+    navbar.classList.remove("active")
+})
+fullscreen.addEventListener("click",function(){
+    
+    fullscreen.style.display = "none"
     navbar.classList.remove("active")
 })
         //Blog Page
