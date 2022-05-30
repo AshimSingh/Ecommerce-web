@@ -151,6 +151,19 @@
    </footer>
    <div class="copyright"><p>©2022 Copyright All reserved to NepTech
    </p> </div>
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <script>const bar=document.querySelector(".mobileView")
+        const navbar =document.querySelector("#navbar")
+        const close =document.querySelector(".close")
+        if(bar){
+    
+    bar.addEventListener('click',()=>{
+        // navbar.style.display="flex"
+        navbar.classList.add('active')
+      })
+}
+close.addEventListener("click",function(){
+    navbar.classList.remove("active")
+})</script>
 </body>
 </html>

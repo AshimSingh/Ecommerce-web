@@ -161,7 +161,9 @@ Arrivals(newdata)
 // })
 const navbar =document.querySelector("#navbar")
 const close =document.querySelector(".close")
+
 if(bar){
+    
     bar.addEventListener('click',()=>{
         // navbar.style.display="flex"
         navbar.classList.add('active')

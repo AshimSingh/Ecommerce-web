@@ -592,6 +592,10 @@ footer{
 .contactDetail{
     width: 50%;
 }
+.googleMap{
+    width: 50%;
+    overflow: hidden;
+}
 .contactDetail span,h3,strong,
 .fontDetail span{
     line-height: 20px;
@@ -653,7 +657,7 @@ footer{
     border: 1px solid #e1e1e1;
 }
 
-
+/* Medium Screen Device*/
 @media (max-width:780px) {
     #navbar{
         display: flex;
@@ -725,6 +729,19 @@ footer{
         object-fit: cover;
         height: 70vh;
     }
+
+
+    /*Contact Us Page*/
+    .formDetail {
+        padding: 40px;
+    }
+    .formDetail .forminput h2{
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .formDetail .forminput{
+        width: 50%;
+    }
 }
 @media (max-width:477px) {
     .header{
@@ -793,5 +810,26 @@ footer{
    .aboutDes{
        width: 100%;
    }
+   /*Contact Page*/
+   .contactInfo{
+       display: flex;
+       flex-direction: column;
+   }
+   .contactDetail {
+    width: 100%;
+}
+   .googleMap{
+       width: 100%;
+   }
+   
+   .formDetail{
+       flex-direction: column;
+   }
+   .formDetail .forminput{
+    width: 100%;
+}
+.formDetail .people{
+    margin-top: 40px;
+}
 }
 
