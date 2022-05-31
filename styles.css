@@ -669,6 +669,9 @@ footer{
 }
 
 /* Cart Page  */
+.cart{
+    overflow-x: auto;
+}
 .cart table{
     width: 100%;
     border-collapse: collapse;
@@ -780,7 +783,7 @@ footer{
     #navbar li{
         margin-bottom: 25px;
     }
-    #navbar.active{
+    #navbar .active{
         right: 0px;
     }
     .mobileView{
