@@ -161,16 +161,18 @@ Arrivals(newdata)
 // })
 const navbar =document.querySelector("#navbar")
 const close =document.querySelector(".close")
-
+const fullscreen =document.querySelector(".fullscreen")
 if(bar){
     
     bar.addEventListener('click',()=>{
         // navbar.style.display="flex"
+        fullscreen.style.zIndex="1"
+        fullscreen.style.display="flex"
         navbar.classList.add('active')
       })
 }
 close.addEventListener("click",function(){
-    fullscreen.style.display="flex"
+    fullscreen.style.display="none"
     navbar.classList.remove("active")
 })
 fullscreen.addEventListener("click",function(){  
