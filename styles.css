@@ -734,7 +734,7 @@ footer{
     outline: none;
     margin-right: 20px;
 }
-.applycoupen .buts{
+.applycoupen .buts,.subtotal .buts{
     background-color: #088178;
 }
 .subtotal{
