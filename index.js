@@ -179,3 +179,9 @@ fullscreen.addEventListener("click",function(){
     fullscreen.style.display = "none"
     navbar.classList.remove("active")
 })
+const productt =document.querySelectorAll(".product")
+for(let i=0;i<productt.length;i++){
+    productt[i].addEventListener("click",function(){
+        window.location.href="productdetail.html"
+})
+}

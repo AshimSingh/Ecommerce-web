@@ -29,6 +29,7 @@
             <i class="fa-solid fa-bars"></i>
         </div>
     </section>
+    <section class="fullscreen"></section>
     <section class="productdetail" id="section-p1">
         <div class="imagesection">
             <div class="displayImage">
@@ -134,7 +135,6 @@
    </footer>
    <div class="copyright"><p>©2022 Copyright All reserved to NepTech
    </p> </div>
-   <script src="index.js"></script>
     <script>
         const displayImage= document.querySelector(".DP")
         const miniImages = document.querySelectorAll(".sliderImageImg")
@@ -144,7 +144,26 @@
                 displayImage.src = miniImages[i].src
             })
         }
-        
+        const bar=document.querySelector(".mobileView")
+        const navbar =document.querySelector("#navbar")
+        const close =document.querySelector(".close")
+        const fullscreen = document.querySelector(".fullscreen")
+        if(bar){
+    bar.addEventListener("click",()=>{
+        // navbar.style.display="flex"
+        fullscreen.style.display = "flex"
+        fullscreen.style.zIndex="1"
+        navbar.classList.add('active')
+      })
+}
+close.addEventListener("click",function(){
+    fullscreen.style.display = "none"
+    navbar.classList.remove("active")
+})
+fullscreen.addEventListener("click",function(){ 
+    fullscreen.style.display = "none"
+    navbar.classList.remove("active")
+})
     </script>
 </body>
 </html>

@@ -936,5 +936,15 @@ footer{
 .formDetail .people{
     margin-top: 40px;
 }
+.cartcoupen{
+    flex-direction: column;
+}
+.cartcoupen >div{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.cartcoupen .subtotal{
+    width: 95%;
+}
 }
 
