@@ -135,7 +135,18 @@
    </footer>
    <div class="copyright"><p>©2022 Copyright All reserved to NepTech
    </p> </div>
-    <script>
+   <script src="index.js"></script>
+   <script>
+       const displayImage= document.querySelector(".DP")
+        const miniImages = document.querySelectorAll(".sliderImageImg")
+        const slider=document.querySelector(".slider")
+        for(let i=0;i<miniImages.length;i++){
+            miniImages[i].addEventListener("click",function(){
+                displayImage.src = miniImages[i].src
+            })
+        }
+   </script>
+    <!-- <script>
         const displayImage= document.querySelector(".DP")
         const miniImages = document.querySelectorAll(".sliderImageImg")
         const slider=document.querySelector(".slider")
@@ -164,6 +175,6 @@ fullscreen.addEventListener("click",function(){
     fullscreen.style.display = "none"
     navbar.classList.remove("active")
 })
-    </script>
+    </script> -->
 </body>
 </html>
